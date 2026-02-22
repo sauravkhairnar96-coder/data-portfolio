@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Khairnar | Aspiring Data Analyst</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="video-wrapper">
+        <video id="bg-video" autoplay loop muted playsinline>
+            <source src="background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header class="sticky-nav sticky top-0 z-50 w-full">
+        <nav class="container mx-auto flex items-center justify-between p-4 px-6">
+<a href="#home" class="text-3xl font-bold flex items-center gap-2 group">
+    <span class="gradient-text">SK.</span>
+    <span class="relative flex h-3 w-3 mt-1">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+    </span>
+</a>            
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="nav-link">🧑‍💻 About</a>
+                <a href="#skills" class="nav-link">🛠️ Skills</a>
+                <a href="#projects" class="nav-link">📊 Projects</a>
+                <a href="#education" class="nav-link">🎓 Education</a>
+                <a href="#contact" class="gradient-btn-outline text-sm">📬 Contact Me</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-slate-300">
+                <i id="menu-open-icon" data-lucide="menu"></i>
+                <i id="menu-close-icon" data-lucide="x" class="hidden"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full mobile-menu-glass">
+            <a href="#about" class="nav-link-mobile">🧑‍💻 About</a>
+            <a href="#skills" class="nav-link-mobile">🛠️ Skills</a>
+            <a href="#projects" class="nav-link-mobile">📊 Projects</a>
+            <a href="#education" class="nav-link-mobile">🎓 Education</a>
+            <a href="#contact" class="nav-link-mobile text-cyan-400">📬 Contact Me</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <section id="home" class="min-h-screen flex flex-col items-center justify-center text-center -mt-16">
+            
+            <div class="relative w-40 h-40 md:w-48 md:h-48 rounded-full flex items-center justify-center mb-6 overflow-hidden border-4 border-cyan-400 image-glow" data-tilt>
+                <img src="sample profile.jpg" alt="Saurav Khairnar" class="w-full h-full object-cover">
+                <div class="absolute inset-0 rounded-full border-4 border-cyan-400 opacity-50 animate-pulse"></div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                Saurav Khairnar
+            </h1>
+            <p class="mt-4 text-2xl md:text-3xl font-semibold gradient-text h-16 md:h-10">
+                <span id="typed-text"></span>
+            </p>
+
+            <div class="mt-8 flex justify-center gap-6">
+                <a href="https://www.linkedin.com/in/sauravkhairnar/" target="_blank" class="social-icon">
+                    <i data-lucide="linkedin"></i>
+                </a>
+            </div>
+
+            <div class="mt-10 flex justify-center">
+                <a href="#contact" class="gradient-btn hover-glow">
+                    Let's Connect 🤝
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 fade-in-section">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="section-heading text-center mb-12">👨‍💻 About Me</h2>
+                <div class="glass-card p-8 md:p-12 hover-lift" data-tilt>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        I am an Aspiring Data Analyst 🎯 with a Bachelor's in Computer Engineering 🎓 and specialized training in Data Analytics. I am proficient in SQL 🗄️, Python (Pandas) 🐍, and Data Visualization 📈. My academic and practical focus revolves around cleaning raw data 🧹, managing database connectivity 💾, and creating structured, actionable reports 📑. I am eager to leverage my analytical skills 🧠 and team spirit 🤝 to contribute to organizational goals. 🚀
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24 fade-in-section">
+            <h2 class="section-heading mb-12">🛠️ Technical Skills</h2>
+            <div class="max-w-5xl mx-auto glass-card p-8 md:p-12" data-tilt>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="file-spreadsheet" class="skill-icon"></i>
+                        <h3 class="font-semibold">Advanced Excel 📊</h3>
+                    </div>
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="code" class="skill-icon"></i>
+                        <h3 class="font-semibold">Python (Pandas) 🐍</h3>
+                    </div>
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="database" class="skill-icon"></i>
+                        <h3 class="font-semibold">SQL🗄️</h3>
+                    </div>
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="pie-chart" class="skill-icon"></i>
+                        <h3 class="font-semibold">Power BI 📈</h3>
+                    </div>
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="bar-chart-2" class="skill-icon"></i>
+                        <h3 class="font-semibold">Matplotlib 📉</h3>
+                    </div>
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="terminal" class="skill-icon"></i>
+                        <h3 class="font-semibold">Jupyter Notebook 📓</h3>
+                    </div>
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="git-merge" class="skill-icon"></i>
+                        <h3 class="font-semibold">Git 🌿</h3>
+                    </div>
+                    <div class="glass-card skill-card hover-lift" data-tilt>
+                        <i data-lucide="lightbulb" class="skill-icon"></i>
+                        <h3 class="font-semibold">Problem Solving 🧩</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 fade-in-section">
+            <h2 class="section-heading mb-12">📊 Data Projects</h2>
+            <div class="max-w-3xl mx-auto">
+
+                <div class="glass-card project-card flex flex-col hover-lift" data-tilt>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-semibold text-white mb-3">Animal Health Data Management System 🐾</h3>
+                        <p class="text-slate-400 mb-6">Acted as the Backend Data Handler to log and store health monitoring data into a structured format 📂. I successfully managed database connectivity using SQLite to ensure accurate, long-term record-keeping of patient logs. Additionally, I developed Python scripts 💻 to clean raw input data from sensors and generated comprehensive summary reports for analysis 📊.</p>
+                    </div>
+                    <div class="mt-auto">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="project-tag">🐍 Python (Pandas)</span>
+                            <span class="project-tag">🗄️ SQL</span>
+                            <span class="project-tag">📊 Excel</span>
+                            <span class="project-tag">🧹 Data Cleaning</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="education" class="py-24 fade-in-section">
+            <h2 class="section-heading mb-12">🎓 Education & Training</h2>
+            <div class="max-w-5xl mx-auto glass-card p-8 md:p-12" data-tilt>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                     <div class="glass-card p-6 border border-cyan-400 shadow-[0_0_15px_rgba(34,211,238,0.3)] hover-lift" data-tilt>
+                        <p class="text-sm text-cyan-400 mb-1 font-medium">⏳ In Progress</p>
+                        <h3 class="text-lg font-semibold text-white mb-2">Certificate Course in Data Analytics 📈</h3>
+                        <p class="text-sm text-slate-300">📍 Fullstack Guru, Pune</p>
+                        <p class="text-xs text-slate-400 mt-2">🎯 Focus on SQL Database Management, Python for Data Science, and Hands-on Data Cleaning.</p>
+                    </div>
+                    <div class="glass-card p-6 hover-lift" data-tilt>
+                        <p class="text-sm text-cyan-400 mb-1 font-medium">🗓️ 2022 – 2026 (Expected)</p>
+                        <h3 class="text-lg font-semibold text-white mb-2">B.E. Computer Engineering 💻</h3>
+                        <p class="text-sm text-slate-300">📍 Guru Gobind Singh College of Engineering and Research Center, Nashik</p>
+                        <p class="text-xs text-slate-400 mt-2">⭐ Sem 7 SGPA: 7.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 text-center fade-in-section">
+            <h2 class="section-heading mb-12">📬 Get In Touch</h2>
+            <div class="max-w-xl mx-auto glass-card p-8 md:p-12 hover-lift" data-tilt>
+                <p class="text-lg text-slate-300 my-6">
+                    I am actively seeking data analyst roles and internships where I can apply my data visualization and SQL skills. Feel free to reach out! ✨
+                </p>
+                <a href="https://www.linkedin.com/in/sauravkhairnar/" target="_blank" class="gradient-btn hover-glow text-lg inline-block">
+                    Connect on LinkedIn 💼
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-8 border-t border-slate-800 mt-20">
+        <p class="text-slate-500">©️ 2026 Saurav Khairnar. All rights reserved. 🚀</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="script.js" defer></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            new Typed('#typed-text', {
+                strings: ['Aspiring Data Analyst 📈', 'SQL & Python Enthusiast 💻'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 2000,
+                loop: true
+            });
+
+            VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+                max: 8,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.15
+            });
+        });
+    </script>
+</body>
+</html>
